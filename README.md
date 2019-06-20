@@ -28,26 +28,30 @@ make 명령어까지 입력이 완료되면, build 폴더 아래에 tester라는
 처음 실행해보면 다음과 같이 결과가 나타날 것입니다.
 
 ```bash
-Testcase #1: Wrong Answer...
-Testcase #2: Correct!
-Testcase #3: Correct!
-Testcase #4: Correct!
-Testcase #5: Correct!
-Testcase #6: Wrong Answer...
-Testcase #7: Wrong Answer...
-Testcase #8: Correct!
-Testcase #9: Correct!
-Testcase #10: Correct!
-Testcase #11: Wrong Answer...
-Testcase #12: Wrong Answer...
-Testcase #13: Correct!
-Testcase #14: Wrong Answer...
-Testcase #15: Wrong Answer...
-Testcase #16: Wrong Answer...
-Testcase #17: Correct!
-Testcase #18: Correct!
-Testcase #19: Wrong Answer...
-Testcase #20: Wrong Answer...
+
+***Start Testing!***
+
+[TC #01] WRONG ANSWER
+[TC #02] CORRECT!
+[TC #03] CORRECT!
+[TC #04] CORRECT!
+[TC #05] CORRECT!
+[TC #06] WRONG ANSWER
+[TC #07] WRONG ANSWER
+[TC #08] CORRECT!
+[TC #09] CORRECT!
+[TC #10] CORRECT!
+[TC #11] WRONG ANSWER
+[TC #12] WRONG ANSWER
+[TC #13] CORRECT!
+[TC #14] WRONG ANSWER
+[TC #15] WRONG ANSWER
+[TC #16] WRONG ANSWER
+[TC #17] CORRECT!
+[TC #18] CORRECT!
+[TC #19] WRONG ANSWER
+[TC #20] WRONG ANSWER
+
 Total Result: 10 / 20
 ```
 
