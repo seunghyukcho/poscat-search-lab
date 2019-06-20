@@ -18,7 +18,7 @@ using namespace std;
 void Tester::solution(char board[][5], std::vector<pr>& ans)
 {
 	// You should replace the code under with yours!
-	bool flag = false;
+	bool flag = true;
     char init[4][4];
     for(int j = 1; j <= 4; j++){
         for(int i = 1; i <= 4; i++){
