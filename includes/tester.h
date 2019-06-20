@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <vector>
-#define TEST_NUMBER 10
+#define TEST_NUMBER 20
 
 typedef std::pair<int, int> pr;
 
@@ -21,6 +21,7 @@ public:
 	void solution(char board[][5], std::vector<pr>& ans);
 	bool isCorrect(char board[][5]);
 	bool simulation(char board[][5], std::vector<pr>& process);
+	void debug(char board[][5]);
 };
 
 #endif

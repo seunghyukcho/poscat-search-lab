@@ -10,9 +10,19 @@ Tester::Tester()
 		importTestCase(i);
 }
 
+void Tester::debug(char board[][5])
+{
+	for(int i = 1; i <= 4; i++)
+	{
+		for(int j = 1; j <= 4; j++)
+			std::cout << board[i][j];
+		std::cout << '\n';
+	}
+}
+
 void Tester::importTestCase(int testCase)
 {
-	std::ifstream inFile("input" + std::to_string(testCase) + ".in");
+	std::ifstream inFile("./testfiles/input" + std::to_string(testCase) + ".txt");
 	std::string line;
 
 	if(!inFile)
@@ -88,10 +98,11 @@ bool Tester::simulation(char board[][5], std::vector<pr>& process)
 
 	for(pr action : process)
 	{
+		debug(board);
 		startx = action.first / 10, starty = action.first % 10;
 		endx = action.second / 10, endy = action.second % 10;
 		diffx = abs(startx - endx);
-		diffy = abs(starty - starty);
+		diffy = abs(starty - endy);
 
 		if(startx == endx && starty == endy)
 			return false;
