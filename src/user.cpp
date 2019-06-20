@@ -17,6 +17,7 @@ using namespace std;
  */
 void Tester::solution(char board[][5], std::vector<pr>& ans)
 {
+	// You should replace the code under with yours!
 	bool flag = false;
     char init[4][4];
     for(int j = 1; j <= 4; j++){
@@ -29,7 +30,7 @@ void Tester::solution(char board[][5], std::vector<pr>& ans)
     	return; // If Impossible or already successful state(only one object exists), just return.
     else
     {
-    	// else, insert your answer in ans.
+    	// else, insert your answer in ans vector.
     	ans.push_back({ 13, 31 });
     	ans.push_back({ 32, 41 });
     }

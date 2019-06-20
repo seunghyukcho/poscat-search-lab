@@ -1,4 +1,5 @@
 #include "tester.h"
+#include "colormode.h"
 #include <string>
 #include <cmath>
 #include <algorithm>
@@ -52,35 +53,46 @@ void Tester::testAll()
 {
 	int correctTestCases = 0, result;
 	std::string message;
+	Color::Modifier red(Color::FG_RED);
+	Color::Modifier blue(Color::FG_BLUE);
+	Color::Modifier def(Color::FG_DEFAULT);
+	Color::Modifier green(Color::FG_GREEN);
+
+	std::cout << "\n***Start Testing!***" << std::endl << std::endl;
 
 	for(int t = 1; t <= TEST_NUMBER; t++)
 	{
-		std::cout << "Testcase #" << t << ": ";
+		std::cout << "[TC #";
+		if(t < 10) std::cout << "0";
+		std::cout << t << "] ";
 		result = test(t);
 
 		switch(result)
 		{
 			case 0:
 				correctTestCases++;
-				message = "Correct!";
+				std::cout << green;
+				message = "CORRECT!";
 				break;
 			case 1:
-				message = "Wrong Answer...";
+				std::cout << red;
+				message = "WRONG ANSWER";
 				break;
 			case 2:
-				message = "Invalid Movements...";
+				std::cout << red;
+				message = "INVALID MOVEMENT";
 				break;
 			default:
 				message = "System Error... Plz contact to the developer";
 		}
 
-		std::cout << message << std::endl;
+		std::cout << message << def << std::endl;
 	}
 
-	std::cout << "Total Result: " << correctTestCases << " / " << TEST_NUMBER << std::endl;
+	std::cout << "\nTotal Result: " << correctTestCases << " / " << TEST_NUMBER << std::endl;
 	if(correctTestCases == TEST_NUMBER)
 	{
-		std::cout << "\nCongratulations! You've passed all the tests! Have a good day :)" << std::endl;
+		std::cout << green << "\nCongratulations! You've passed all the tests! Have a good day :)" << def << std::endl;
 	}
 }
 
@@ -98,7 +110,6 @@ bool Tester::simulation(char board[][5], std::vector<pr>& process)
 
 	for(pr action : process)
 	{
-		debug(board);
 		startx = action.first / 10, starty = action.first % 10;
 		endx = action.second / 10, endy = action.second % 10;
 		diffx = abs(startx - endx);
