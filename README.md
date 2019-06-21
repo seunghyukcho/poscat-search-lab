@@ -17,11 +17,12 @@ cmake .
 make
 ```
 
-make 명령어까지 입력이 완료되면, build 폴더 아래에 tester라는 executable file이 생긴 것을 확인하실 수 있습니다. 이를 실행하시면 됩니다.
+make 명령어까지 입력이 완료되면, build 폴더 아래에 tester라는 executable file이 생긴 것을 확인하실 수 있습니다. 이를 실행하시면 됩니다. 코드 수정 후, cmake .과 make 명령어를 차례대로 치시면 실행파일이 수정될 것입니다.
 
 #### Visual Studios
 
-새 프로젝트를 만들고, includes/, src/ 아래에 있는 파일들을 새로 만든 프로젝트에 옮기시면 됩니다. 가능하시다면 통째로 CMake project로 여셔도 됩니다.
+- <https://docs.microsoft.com/ko-kr/cpp/build/cmake-projects-in-visual-studio?view=vs-2019> 를 참고하여, 프로젝트를 여시면 됩니다.
+- 잘 안되시면 새 프로젝트를 만들고, includes/, src/ 아래에 있는 파일들을 새로 만든 프로젝트에 옮기시면 됩니다.
 
 ## Practice
 
