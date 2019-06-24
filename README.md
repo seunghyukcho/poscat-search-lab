@@ -11,7 +11,7 @@ Solitaire Chess 문제를 해결하는 solver를 구현할 수 있는 platform�
 repository를 pull 또는 다운로드 받고, command line에 다음 명령어들을 칩니다. 단, cmake와 c++14 컴파일러가 우선적으로 설치되어 있어야합니다.
 
 ```bash
-git pull https://github.com/shhj1998/solitaire-chess-practice.git
+git clone https://github.com/shhj1998/solitaire-chess-practice.git
 cd solitaire-chess-practice
 cmake .
 make
