@@ -19,7 +19,7 @@ void Tester::solution(char board[][5], std::vector<pr>& ans)
 {
 	// You should replace the code under with yours!
 	bool flag = true;
-    char init[4][4];
+    char init[5][5];
     for(int j = 1; j <= 4; j++){
         for(int i = 1; i <= 4; i++){
             init[i][j] = board[i][j]; // Initial state of the chess board is in board
