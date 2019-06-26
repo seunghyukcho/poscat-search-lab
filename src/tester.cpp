@@ -133,6 +133,13 @@ bool Tester::simulation(char board[][5], std::vector<pr>& process)
 		horse = board[startx][starty];
 		if(board[endx][endy] == '.')
 			return false;
+		if(horse != '.' && horse != 'K' && horse != 'P')
+		{
+			for(int row = startx + dirx, col = starty + diry; 
+				row != endx && col != endy; row += dirx, col += diry)
+				if(board[row][col] != '.')
+					return false;
+		}
 
 		if(horse == '.')
 			return false;
@@ -145,11 +152,6 @@ bool Tester::simulation(char board[][5], std::vector<pr>& process)
 		{
 			if(diffx * diffy != 0 && diffx != diffy)
 				return false;
-
-			for(int row = startx + dirx; row != endx; row += dirx)
-				for(int col = starty + diry; col != endy; col += diry)
-					if(board[row][col] != '.')
-						return false;
 		}
 		else if(horse == 'K')
 		{
@@ -160,21 +162,11 @@ bool Tester::simulation(char board[][5], std::vector<pr>& process)
 		{
 			if(diffx != diffy)
 				return false;
-
-			for(int row = startx + dirx; row != endx; row += dirx)
-				for(int col = starty + diry; col != endy; col += diry)
-					if(board[row][col] != '.')
-						return false;
 		}
 		else if(horse == 'R')
 		{
 			if(diffx * diffy != 0)
 				return false;
-
-			for(int row = startx + dirx; row != endx; row += dirx)
-				for(int col = starty + diry; col != endy; col += diry)
-					if(board[row][col] != '.')
-						return false;
 		}
 		else if(horse == 'P')
 		{
