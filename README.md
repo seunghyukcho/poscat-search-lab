@@ -1,6 +1,6 @@
-# Solitaire Chess Practice
+# Search Lab
 
-Solitaire Chess 문제를 해결하는 solver를 구현할 수 있는 platform입니다. 구현한 solver를 여러 개의 testcase로 평가하여, 결과를 보여드립니다. Solitaire Chess의 규칙은 [여기](https://www.thinkfun.com/wp-content/uploads/2015/09/SolChess-3400-IN03.pdf)에서 확인하실 수 있습니다.
+POSCAT(POSTECH Computer Algorithm Team)에서 만든 Game AI lab으로, 완전탐색에 대한 이해를 돕기 위해 만들어졌습니다. 보드 게임의 일종인, solitaire chess를 해결하는 solver를 구현할 수 있는 platform입니다. 구현한 solver를 여러 개의 testcase로 평가하여, 결과를 보여드립니다. Solitaire chess의 규칙은 [링크](https://www.thinkfun.com/wp-content/uploads/2015/09/SolChess-3400-IN03.pdf)에서 확인하실 수 있습니다.
 
 ## Getting Started
 
